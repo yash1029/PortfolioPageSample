@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;500;600;700;800&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body{
+    min-height: 100vh;
+    background-image: url("img/bg.png");
+    background-position: center;
+    background-size: cover;
+    padding:1em 5em;
+}
+
+
+.navbar.navbar-expand-lg.bg-body-tertiary{
+    background-color: transparent !important;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height:85vh;
+}
+
+.content h1{
+    font-size: 4rem;
+    font-weight: 600;
+    font-family: 'Baloo Bhaina 2', cursive;
+   
+}
+
+.content p{
+    font-size: 2rem;
+}
+
+.portfolio-heading{
+ display:flex;
+ align-items: center;
+ gap:1em;
+}
+
+.cards-projects{
+    display:flex;
+    gap:5em;
+    justify-content: center;
+    margin-top:4em;
+    margin-bottom:4em;
+}
+
+.skill-heading{
+    display:flex;
+    align-items: center;
+    gap:1em;
+}
+
+i{
+    font-size: 1.5rem;
+}
+
+.html, .css, .javascript{
+    display:flex;
+    gap:3em;
+    margin:2em;
+    font-size: 1.5rem;
+}
+
+:is(.html,.css,.javascript) .progressBar{
+    width:60vw;
+}
+
+:is(.html,.css,.javascript) .progressBar .progress{
+    width:75%;
+    background-image: linear-gradient( 109.6deg,  rgba(45,116,213,1) 11.2%, rgba(121,137,212,1) 91.2% );
+}
+
+
+.css .progressBar{
+    width:55%;
+    margin-left:0.6em;
+}
+.javascript .progressBar{
+    width:30%;
+    margin-left:1.6em;
+}
